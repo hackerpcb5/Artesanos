@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Artesanos | Programa Escolar</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="portal.css" />
+  <!-- Permite usar `import { createClient } from '@supabase/supabase-js'` sin bundler -->
+  <script type="importmap">
+    { "imports": { "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm" } }
+  </script>
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="loginView" class="auth-view">
+    <form class="auth-card" id="loginForm">
+      <h2>🧶 Portal de Artesanos</h2>
+      <p class="auth-sub">Acceso exclusivo para artesanos del programa</p>
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button class="btn btn-primary" type="submit">Entrar al Portal</button>
+      <a href="index.html" class="auth-link">← Volver al sitio</a>
+    </form>
+  </div>
+
+  <!-- PORTAL -->
+  <div id="portalView" class="portal-view hidden">
+    <nav class="pnav">
+      <div class="brand">🧶 Portal Artesanos</div>
+      <div>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <button class="btn btn-danger btn-sm" id="logoutBtn">Salir</button>
+      </div>
+    </nav>
+
+    <main class="pcontainer">
+      <!-- Próxima feria -->
+      <section class="pcard" id="fairCard">
+        <h2>🎪 Próxima Feria de Artesanías</h2>
+        <div id="fairContent"><p>Cargando…</p></div>
+      </section>
+
+      <div class="pgrid">
+        <!-- Avisos -->
+        <section class="pcard">
+          <h2>📢 Avisos Importantes</h2>
+          <div id="notices"><p>Cargando…</p></div>
+        </section>
+
+        <!-- Documentos -->
+        <section class="pcard">
+          <h2>📄 Documentos</h2>
+          <ul id="documents" class="doc-list"><li>Cargando…</li></ul>
+        </section>
+
+        <!-- Visor de documentos -->
+        <div id="docViewer" class="doc-viewer hidden">
+          <div class="doc-viewer-content">
+            <button class="doc-viewer-close" id="docViewerClose" aria-label="Cerrar visor">✕</button>
+            <div id="docViewerBody"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendario -->
+      <section class="pcard">
+        <h2>📅 Calendario de Actividades</h2>
+        <div id="calendar" class="cal-grid">Cargando…</div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast-container"></div>
+  <script type="module" src="portal.js"></script>
+</body>
+</html>

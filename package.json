@@ -1,0 +1,11 @@
+{
+  "name": "programa-artesanos",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Programa Escolar de Artesanos - Sitio estático con Supabase (sin backend propio)",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-env.mjs"
+  },
+  "license": "ISC"
+}

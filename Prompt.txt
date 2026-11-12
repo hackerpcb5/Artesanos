@@ -1,0 +1,105 @@
+Actúa como un desarrollador web profesional experto en diseño moderno, UX/UI y desarrollo Full Stack.
+
+Crea una página web completa, responsiva y moderna para un Programa Escolar de Artesanos. La web debe tener una apariencia profesional, atractiva y fácil de administrar.
+
+REQUISITOS GENERALES:
+- Diseño moderno y elegante.
+- Compatible con computadoras, tabletas y teléfonos móviles.
+- Interfaz intuitiva.
+- Colores inspirados en el arte, la artesanía y la cultura puertorriqueña.
+- Menú de navegación fijo.
+- Animaciones suaves y profesionales.
+- Código limpio y bien comentado.
+
+SECCIONES PRINCIPALES:
+
+1. INICIO
+- Hero principal con una imagen relacionada con la artesanía.
+- Título del programa.
+- Descripción breve del propósito del programa.
+- Botones de acceso rápido.
+
+2. BANNER DE ANUNCIOS
+- Sección destacada para mostrar anuncios importantes.
+- Permitir agregar múltiples anuncios.
+- Mostrar fecha de publicación.
+- Opción de destacar anuncios urgentes.
+
+3. INFORMACIÓN DEL PROGRAMA
+- Historia del programa.
+- Objetivos.
+- Beneficios para los estudiantes.
+- Actividades que se realizan.
+
+4. REQUISITOS DE PARTICIPACIÓN
+- Lista de requisitos para formar parte del programa.
+- Documentos necesarios.
+- Criterios de selección.
+- Fechas de inscripción.
+
+5. ARTESANOS ACTUALES
+- Tarjetas con fotografía.
+- Nombre.
+- Especialidad artesanal.
+- Breve descripción.
+- Posibilidad de agregar o eliminar artesanos desde el panel de administración.
+
+6. ARTESANOS ANTERIORES
+- Galería histórica de artesanos graduados o participantes anteriores.
+- Fotografía.
+- Nombre.
+- Año de participación.
+- Descripción opcional.
+
+FUNCIONES ESPECIALES:
+
+7. PANEL DE ADMINISTRACIÓN
+- Botón visible llamado "Administrar Contenido".
+- Acceso mediante usuario y contraseña.
+- Panel independiente donde se puedan editar:
+  - Banner de anuncios.
+  - Información del programa.
+  - Requisitos.
+  - Artesanos actuales.
+  - Artesanos anteriores.
+- Funciones CRUD completas:
+  - Crear.
+  - Editar.
+  - Eliminar.
+  - Guardar cambios.
+- Persistencia de datos usando base de datos.
+
+8. PORTAL EXCLUSIVO PARA ARTESANOS
+- Botón llamado "Portal de Artesanos".
+- Abrir una página exclusiva para artesanos.
+- Acceso protegido mediante inicio de sesión.
+
+Dentro del Portal de Artesanos incluir:
+
+- Información sobre la próxima feria de artesanías.
+- Fecha.
+- Hora.
+- Lugar.
+- Descripción del evento.
+- Requisitos para participar.
+- Mapa de ubicación.
+- Avisos importantes.
+- Descarga de documentos.
+- Calendario de actividades.
+
+TECNOLOGÍAS:
+- Frontend: HTML, CSS y JavaScript moderno o React.
+- Backend: Node.js con Express.
+- Base de datos: MySQL o PostgreSQL.
+- Autenticación segura para administradores y artesanos.
+- Diseño profesional con componentes reutilizables.
+
+EXTRAS:
+- Modo oscuro.
+- Buscador de artesanos.
+- Galería de fotos.
+- Sistema de notificaciones.
+- Optimización SEO.
+- Alta accesibilidad.
+
+Genera todo el código de la aplicación, incluyendo la estructura de carpetas, base de datos, frontend, backend, autenticación y panel administrativo completamente funcional. recuerda hacer todo en HTML, CSS, JS

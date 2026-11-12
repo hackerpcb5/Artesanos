@@ -1,0 +1,14 @@
+[build]
+  command = "node scripts/build-env.mjs"
+  publish = "dist"
+
+# Mantiene las rutas cortas que antes servía Express (/admin, /portal)
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/portal"
+  to = "/portal.html"
+  status = 200

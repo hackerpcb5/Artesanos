@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Administración | Artesanos</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="admin.css" />
+  <!-- Permite usar `import { createClient } from '@supabase/supabase-js'` sin bundler -->
+  <script type="importmap">
+    { "imports": { "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm" } }
+  </script>
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="loginView" class="auth-view">
+    <form class="auth-card" id="loginForm">
+      <h2>🔐 Acceso de Administrador</h2>
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+      <a href="index.html" class="back">← Volver al sitio</a>
+    </form>
+  </div>
+
+  <!-- PANEL -->
+  <div id="adminView" class="admin-view hidden">
+    <aside class="sidebar">
+      <h3>🧶 Admin</h3>
+      <nav>
+        <button class="tab active" data-tab="announcements">Anuncios</button>
+        <button class="tab" data-tab="programInfo">Info Programa</button>
+        <button class="tab" data-tab="requirements">Requisitos</button>
+        <button class="tab" data-tab="artisans">Artesanos</button>
+        <button class="tab" data-tab="alumni">Anteriores</button>
+        <button class="tab" data-tab="gallery">Galería</button>
+        <button class="tab" data-tab="fair">Feria</button>
+        <button class="tab" data-tab="notices">Avisos Art.</button>
+        <button class="tab" data-tab="documents">Documentos</button>
+        <button class="tab" data-tab="activities">Actividades</button>
+      </nav>
+      <button class="btn btn-danger btn-sm" id="logoutBtn">Cerrar sesión</button>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h2 id="tabTitle">Anuncios</h2>
+        <button class="btn btn-primary btn-sm" id="addBtn">+ Agregar</button>
+      </header>
+
+      <!-- Contenedor dinámico por pestaña -->
+      <div id="panel"></div>
+    </main>
+  </div>
+
+  <!-- Modal genérico para formularios -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="yarn.png" type="image/x-icon">
+  <title>Organización de Artesanos y Empresarios Juveniles PCB | Puerto Rico</title>
+  <meta name="description" content="Programa escolar que promueve la artesanía y cultura puertorriqueña. Talleres, ferias y formación de jóvenes artesanos." />
+  <meta name="keywords" content="artesanía, puerto rico, programa escolar, artesanos, cultura, talleres" />
+  <meta property="og:title" content="Organización de Artesanos y Empresarios Juveniles PCB" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Permite usar `import { createClient } from '@supabase/supabase-js'` sin bundler -->
+  <script type="importmap">
+    { "imports": { "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm" } }
+  </script>
+
+</head>
+<body>
+  <!-- ============== skiblidi = 676767676 ============== -->
+  <nav class="navbar">
+    <div class="brand">
+      <img class="logo" src="LOGO6.png" alt="Logo Artesanos Escolares">
+      <span>Artesanos y Empresarios Juveniles PCB</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">☰</button>
+    <ul class="nav-links" id="desktopNavLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#anuncios">Anuncios</a></li>
+      <li><a href="#programa">Programa</a></li>
+      <li><a href="#requisitos">Requisitos</a></li>
+      <li><a href="#artesanos">Artesanos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><button class="theme-toggle" id="themeToggleDesktop" aria-label="Cambiar tema">🌙</button></li>
+      <li><a class="btn btn-gold btn-sm" href="admin.html" id="Administrarbtn">Administrar</a></li>
+      <li><a class="btn btn-ghost btn-sm" href="portal.html">Portal Artesanos</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============== MENÚ MÓVIL ============== -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu-panel" id="navLinks" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Cerrar menú">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#anuncios">Anuncios</a></li>
+      <li><a href="#programa">Programa</a></li>
+      <li><a href="#requisitos">Requisitos</a></li>
+      <li><a href="#artesanos">Artesanos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li class="mobile-menu-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+      </li>
+      <li class="mobile-menu-actions">
+        <a class="btn btn-gold btn-sm" href="admin.html">Administrar</a>
+      </li>
+      <li class="mobile-menu-actions">
+        <a class="btn btn-ghost btn-sm" href="portal.html">Portal Artesanos</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ============== HERO / INICIO ============== -->
+  <header class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>Organización de Artesanos y Empresarios Juveniles PCB</h1>
+      <p>Rescatamos y celebramos las tradiciones artesanales de Puerto Rico, formando a la próxima generación de creadores con orgullo criollo.</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="#programa">Conoce el Programa</a>
+        <a class="btn btn-gold" href="#requisitos">¡Inscríbete!</a>
+        <a class="btn btn-ghost" href="portal.html">Portal de Artesanos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== ANUNCIOS ============== -->
+  <section id="anuncios">
+    <div class="container">
+      <h2 class="section-title">Anuncios Importantes</h2>
+      <p class="section-sub">Mantente al día con las novedades del programa</p>
+      <div class="announce-grid" id="announceGrid">
+        <p>Cargando anuncios…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== INFORMACIÓN DEL PROGRAMA ============== -->
+  <section id="programa" class="bg-crema">
+    <div class="container">
+      <h2 class="section-title">Información del Programa</h2>
+      <p class="section-sub">Historia, objetivos, beneficios y actividades</p>
+      <div class="info-grid" id="infoGrid">
+        <p>Cargando información…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== REQUISITOS ============== -->
+  <section id="requisitos">
+    <div class="container">
+      <h2 class="section-title">Requisitos de Participación</h2>
+      <p class="section-sub">Lo que necesitas para formar parte</p>
+      <div class="req-cols" id="reqCols">
+        <p>Cargando requisitos…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ARTESANOS ACTUALES ============== -->
+  <section id="artesanos" class="bg-crema">
+    <div class="container">
+      <h2 class="section-title">Artesanos Actuales</h2>
+      <p class="section-sub">Nuestros talentos en formación</p>
+
+      <div class="cards-grid" id="artisansGrid">
+        <p>Cargando artesanos…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ARTESANOS ANTERIORES ============== -->
+  <section id="alumni">
+    <div class="container">
+      <h2 class="section-title">Artesanos Anteriores</h2>
+      <p class="section-sub">Quienes ya dejaron huella</p>
+      <div class="cards-grid" id="alumniGrid">
+        <p>Cargando…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GALERÍA ============== -->
+  <section id="galeria" class="bg-crema">
+    <div class="container">
+      <h2 class="section-title">Galería de Fotos</h2>
+      <p class="section-sub">Momentos de nuestra comunidad artesanal</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <p>Cargando galería…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer>
+    <p>Organización de Artesanos y Empresarios Juveniles PCB · Puerto Rico 🇵🇷</p>
+    <p class="social">
+      <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">Contacto</a>
+    </p>
+    <p style="margin-top:0.8rem;opacity:0.8;font-size:0.85rem;">© <span id="year"></span> Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Notificaciones -->
+  <div id="toast-container"></div>
+
+  <!-- Visor de imágenes -->
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visor">✕</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
